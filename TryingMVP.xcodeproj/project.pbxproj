@@ -14,23 +14,15 @@
 		5E71DE652970B2BC006D7F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E71DE642970B2BC006D7F53 /* Assets.xcassets */; };
 		5E71DE682970B2BC006D7F53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E71DE662970B2BC006D7F53 /* LaunchScreen.storyboard */; };
 		5E71DE732970B2BC006D7F53 /* TryingMVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71DE722970B2BC006D7F53 /* TryingMVPTests.swift */; };
-		5E71DE7D2970B2BD006D7F53 /* TryingMVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71DE7C2970B2BD006D7F53 /* TryingMVPUITests.swift */; };
-		5E71DE7F2970B2BD006D7F53 /* TryingMVPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71DE7E2970B2BD006D7F53 /* TryingMVPUITestsLaunchTests.swift */; };
 		5E71DE8C2970B61B006D7F53 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71DE8B2970B61B006D7F53 /* Person.swift */; };
 		5E71DE902970B667006D7F53 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71DE8F2970B667006D7F53 /* MainPresenter.swift */; };
 		5E71DE962970BD25006D7F53 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E71DE952970BD25006D7F53 /* MainViewController.xib */; };
 		5E71DE982970BE0D006D7F53 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71DE972970BE0D006D7F53 /* ModuleBuilder.swift */; };
+		5E71DE9E2970C418006D7F53 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71DE9D2970C418006D7F53 /* MainPresenterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		5E71DE6F2970B2BC006D7F53 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5E71DE502970B2BC006D7F53 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5E71DE572970B2BC006D7F53;
-			remoteInfo = TryingMVP;
-		};
-		5E71DE792970B2BD006D7F53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E71DE502970B2BC006D7F53 /* Project object */;
 			proxyType = 1;
@@ -50,13 +42,11 @@
 		5E71DE692970B2BC006D7F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E71DE6E2970B2BC006D7F53 /* TryingMVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TryingMVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E71DE722970B2BC006D7F53 /* TryingMVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryingMVPTests.swift; sourceTree = "<group>"; };
-		5E71DE782970B2BD006D7F53 /* TryingMVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TryingMVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E71DE7C2970B2BD006D7F53 /* TryingMVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryingMVPUITests.swift; sourceTree = "<group>"; };
-		5E71DE7E2970B2BD006D7F53 /* TryingMVPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryingMVPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5E71DE8B2970B61B006D7F53 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		5E71DE8F2970B667006D7F53 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		5E71DE952970BD25006D7F53 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		5E71DE972970BE0D006D7F53 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		5E71DE9D2970C418006D7F53 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,13 +64,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E71DE752970B2BD006D7F53 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,7 +72,6 @@
 			children = (
 				5E71DE5A2970B2BC006D7F53 /* TryingMVP */,
 				5E71DE712970B2BC006D7F53 /* TryingMVPTests */,
-				5E71DE7B2970B2BD006D7F53 /* TryingMVPUITests */,
 				5E71DE592970B2BC006D7F53 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,7 +81,6 @@
 			children = (
 				5E71DE582970B2BC006D7F53 /* TryingMVP.app */,
 				5E71DE6E2970B2BC006D7F53 /* TryingMVPTests.xctest */,
-				5E71DE782970B2BD006D7F53 /* TryingMVPUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,18 +103,10 @@
 		5E71DE712970B2BC006D7F53 /* TryingMVPTests */ = {
 			isa = PBXGroup;
 			children = (
+				5E71DE9A2970C380006D7F53 /* TestMainModule */,
 				5E71DE722970B2BC006D7F53 /* TryingMVPTests.swift */,
 			);
 			path = TryingMVPTests;
-			sourceTree = "<group>";
-		};
-		5E71DE7B2970B2BD006D7F53 /* TryingMVPUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5E71DE7C2970B2BD006D7F53 /* TryingMVPUITests.swift */,
-				5E71DE7E2970B2BD006D7F53 /* TryingMVPUITestsLaunchTests.swift */,
-			);
-			path = TryingMVPUITests;
 			sourceTree = "<group>";
 		};
 		5E71DE912970BC9D006D7F53 /* MainModule */ = {
@@ -169,6 +142,14 @@
 				5E71DE8F2970B667006D7F53 /* MainPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5E71DE9A2970C380006D7F53 /* TestMainModule */ = {
+			isa = PBXGroup;
+			children = (
+				5E71DE9D2970C418006D7F53 /* MainPresenterTest.swift */,
+			);
+			path = TestMainModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,24 +190,6 @@
 			productReference = 5E71DE6E2970B2BC006D7F53 /* TryingMVPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5E71DE772970B2BD006D7F53 /* TryingMVPUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E71DE882970B2BD006D7F53 /* Build configuration list for PBXNativeTarget "TryingMVPUITests" */;
-			buildPhases = (
-				5E71DE742970B2BD006D7F53 /* Sources */,
-				5E71DE752970B2BD006D7F53 /* Frameworks */,
-				5E71DE762970B2BD006D7F53 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5E71DE7A2970B2BD006D7F53 /* PBXTargetDependency */,
-			);
-			name = TryingMVPUITests;
-			productName = TryingMVPUITests;
-			productReference = 5E71DE782970B2BD006D7F53 /* TryingMVPUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -241,10 +204,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					5E71DE6D2970B2BC006D7F53 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 5E71DE572970B2BC006D7F53;
-					};
-					5E71DE772970B2BD006D7F53 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 5E71DE572970B2BC006D7F53;
 					};
@@ -265,7 +224,6 @@
 			targets = (
 				5E71DE572970B2BC006D7F53 /* TryingMVP */,
 				5E71DE6D2970B2BC006D7F53 /* TryingMVPTests */,
-				5E71DE772970B2BD006D7F53 /* TryingMVPUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -283,13 +241,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5E71DE6C2970B2BC006D7F53 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E71DE762970B2BD006D7F53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,15 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E71DE732970B2BC006D7F53 /* TryingMVPTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E71DE742970B2BD006D7F53 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E71DE7D2970B2BD006D7F53 /* TryingMVPUITests.swift in Sources */,
-				5E71DE7F2970B2BD006D7F53 /* TryingMVPUITestsLaunchTests.swift in Sources */,
+				5E71DE9E2970C418006D7F53 /* MainPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,11 +279,6 @@
 			isa = PBXTargetDependency;
 			target = 5E71DE572970B2BC006D7F53 /* TryingMVP */;
 			targetProxy = 5E71DE6F2970B2BC006D7F53 /* PBXContainerItemProxy */;
-		};
-		5E71DE7A2970B2BD006D7F53 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5E71DE572970B2BC006D7F53 /* TryingMVP */;
-			targetProxy = 5E71DE792970B2BD006D7F53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -574,42 +512,6 @@
 			};
 			name = Release;
 		};
-		5E71DE892970B2BD006D7F53 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 44J3T4A266;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Grilyuk.TryingMVPUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TryingMVP;
-			};
-			name = Debug;
-		};
-		5E71DE8A2970B2BD006D7F53 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 44J3T4A266;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Grilyuk.TryingMVPUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TryingMVP;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -636,15 +538,6 @@
 			buildConfigurations = (
 				5E71DE862970B2BD006D7F53 /* Debug */,
 				5E71DE872970B2BD006D7F53 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5E71DE882970B2BD006D7F53 /* Build configuration list for PBXNativeTarget "TryingMVPUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E71DE892970B2BD006D7F53 /* Debug */,
-				5E71DE8A2970B2BD006D7F53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
