@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="TryingMVP" customModuleProvider="target">
             <connections>
-                <outlet property="greetingLabel" destination="GbC-bI-Dej" id="Gln-Pg-xYO"/>
+                <outlet property="tableView" destination="ubb-F0-J2O" id="2hJ-AN-nGP"/>
                 <outlet property="view" destination="iN0-l3-epB" id="NHE-gx-J0H"/>
             </connections>
         </placeholder>
@@ -19,22 +19,15 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbC-bI-Dej">
-                    <rect key="frame" x="16" y="344" width="361" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFu-7k-FOB">
-                    <rect key="frame" x="159" y="425" width="75" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ubb-F0-J2O">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
-                        <action selector="didTapButtonAction:" destination="-1" eventType="touchUpInside" id="CVh-7H-66Z"/>
+                        <outlet property="dataSource" destination="-1" id="3J2-Db-K1e"/>
+                        <outlet property="delegate" destination="-1" id="IBm-Ut-n4d"/>
                     </connections>
-                </button>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
