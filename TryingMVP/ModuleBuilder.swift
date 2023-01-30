@@ -7,25 +7,24 @@
 
 import UIKit
 
-protocol Builder {
-    static func createMain() -> UIViewController
-    static func createDetail(comment: Comment?) -> UIViewController
+protocol AssemblyBuilderProtocol {
+    func createMain(router: RouterProtocol) -> UIViewController
+    func createDetail(comment: Comment?, router: RouterProtocol) -> UIViewController
 }
 
-class ModelBuilder: Builder {
-    
-    static func createMain() -> UIViewController {
+class AssemblyModelBuilder: AssemblyBuilderProtocol {
+    func createMain(router: RouterProtocol) -> UIViewController {
         let network = NetworkService()
         let view = MainViewController()
-        let presenter = MainPresenter(view: view, network: network)
+        let presenter = MainPresenter(view: view, network: network, router: router)
         view.presenter = presenter
         return view
     }
-
-    static func createDetail(comment: Comment?) -> UIViewController {
+    
+    func createDetail(comment: Comment?, router: RouterProtocol) -> UIViewController {
         let network = NetworkService()
         let view = DetailViewController()
-        let presenter = DetailPresenter(view: view, network: network, comment: comment)
+        let presenter = DetailPresenter(view: view, network: network, router: router, comment: comment)
         view.presenter = presenter
         return view
     }

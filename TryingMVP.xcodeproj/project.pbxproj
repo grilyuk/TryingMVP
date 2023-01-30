@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E359C1629885D3E005C1771 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E359C1529885D3E005C1771 /* Router.swift */; };
 		5E71DE5C2970B2BC006D7F53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71DE5B2970B2BC006D7F53 /* AppDelegate.swift */; };
 		5E71DE5E2970B2BC006D7F53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71DE5D2970B2BC006D7F53 /* SceneDelegate.swift */; };
 		5E71DE602970B2BC006D7F53 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71DE5F2970B2BC006D7F53 /* MainViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E359C1529885D3E005C1771 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5E71DE582970B2BC006D7F53 /* TryingMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryingMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E71DE5B2970B2BC006D7F53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E71DE5D2970B2BC006D7F53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E359C1729886A23005C1771 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5E71DE5B2970B2BC006D7F53 /* AppDelegate.swift */,
+				5E71DE5D2970B2BC006D7F53 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5E359C1829886A43005C1771 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E71DE612970B2BC006D7F53 /* Main.storyboard */,
+				5E71DE642970B2BC006D7F53 /* Assets.xcassets */,
+				5E71DE662970B2BC006D7F53 /* LaunchScreen.storyboard */,
+				5E71DE692970B2BC006D7F53 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		5E71DE4F2970B2BC006D7F53 = {
 			isa = PBXGroup;
 			children = (
@@ -96,16 +118,13 @@
 		5E71DE5A2970B2BC006D7F53 /* TryingMVP */ = {
 			isa = PBXGroup;
 			children = (
-				5E71DE5B2970B2BC006D7F53 /* AppDelegate.swift */,
-				5E71DE5D2970B2BC006D7F53 /* SceneDelegate.swift */,
+				5E359C1729886A23005C1771 /* Application */,
 				5E71DE972970BE0D006D7F53 /* ModuleBuilder.swift */,
+				5E359C1529885D3E005C1771 /* Router.swift */,
 				5ED4FB86297238ED00FCB8A4 /* DetailModule */,
 				5E71DE912970BC9D006D7F53 /* MainModule */,
 				5ED4FB82297228D900FCB8A4 /* ServiceLayer */,
-				5E71DE612970B2BC006D7F53 /* Main.storyboard */,
-				5E71DE642970B2BC006D7F53 /* Assets.xcassets */,
-				5E71DE662970B2BC006D7F53 /* LaunchScreen.storyboard */,
-				5E71DE692970B2BC006D7F53 /* Info.plist */,
+				5E359C1829886A43005C1771 /* Resources */,
 			);
 			path = TryingMVP;
 			sourceTree = "<group>";
@@ -301,6 +320,7 @@
 			files = (
 				5ED4FB8A2972398F00FCB8A4 /* DetailViewController.swift in Sources */,
 				5E71DE902970B667006D7F53 /* MainPresenter.swift in Sources */,
+				5E359C1629885D3E005C1771 /* Router.swift in Sources */,
 				5E71DE602970B2BC006D7F53 /* MainViewController.swift in Sources */,
 				5E71DE5C2970B2BC006D7F53 /* AppDelegate.swift in Sources */,
 				5ED4FB84297235B300FCB8A4 /* DetailPresenter.swift in Sources */,
@@ -473,7 +493,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 44J3T4A266;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TryingMVP/Info.plist;
+				INFOPLIST_FILE = TryingMVP/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -501,7 +521,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 44J3T4A266;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TryingMVP/Info.plist;
+				INFOPLIST_FILE = TryingMVP/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
